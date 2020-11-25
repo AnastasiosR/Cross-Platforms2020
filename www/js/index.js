@@ -24,6 +24,13 @@ document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
 
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
+    //console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+                                                document.getElementById('deviceready').classList.add('ready');
+    return this;
+    
 }
