@@ -5,17 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run Browser",
-            "type": "cordova",
-            "request": "launch",
-            "platform": "browser",
-            "target": "chrome",
-            "simulatePort": 8000,
-            "livereload": true,
-            "cwd": "${workspaceFolder}",
-            "sourceMaps": true
-        },
-        {
             "name": "Run Android on emulator",
             "type": "cordova",
             "request": "launch",
@@ -26,26 +15,11 @@
             "cwd": "${workspaceFolder}"
         },
         {
-            "name": "Attach to running Android on emulator",
-            "type": "cordova",
-            "request": "attach",
-            "platform": "android",
-            "target": "emulator",
-            "port": 9222,
-            "sourceMaps": true,
-            "cwd": "${workspaceFolder}"
-        },
-        {
-            
-            "name": "ru",
-            "type": "cordova",
+            "type": "pwa-chrome",
             "request": "launch",
-            "platform": "browser",
-            "target": "chrome",
-            "simulatePort": 8000,
-            "livereload": true,
-            "sourceMaps": true,
-            "cwd": "${workspaceFolder}"
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
