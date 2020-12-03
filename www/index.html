@@ -17,7 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="../www/css/reset.min.css">
 		<link rel="stylesheet" type="text/css" href="../www/css/style.css">
 	</head>
-	<body>
+	<body id="onLoad" class="onLoad" onload="onLoad()">
 
 		<header>
 			<input type="text" placeholder="Enter an activity.." id="item">
@@ -30,11 +30,16 @@
 			<!-- Uncompleted tasks -->
 			<ul class="todo" id="todo"></ul>
 
-			<!-- Completed tasks -->
-			<ul class="todo" id="completed"></ul>
+			<!-- Completed tasks --> 
+			<ul class="todo" id="completed"></ul><br>
+
+			<button id="getPosition">Current Position <br>Location for assignment</button>
+			
 		</div>
 
 		<!-- JavaScripts -->
 		<script src="../www/js/main.js"></script>
+		<script src="../www/js/cordova.js"></script>
+		
 	</body>
 </html>

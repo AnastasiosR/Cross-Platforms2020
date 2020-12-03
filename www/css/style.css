@@ -54,6 +54,13 @@ header input {
   -moz-appearance: none;
 }
 
+#getPosition {
+  background-color: yellowgreen;
+  margin-left:125px;
+  margin-top: 150px;
+  align-self: center;
+  text-align: center;
+}
 header input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.75);
 }
@@ -125,7 +132,7 @@ ul.todo li {
   float: left;
   font-size: 14px;  
   font-weight: 500;
-  color: #444;
+  color: rgb(255, 255, 255);
   line-height: 22px;
 
   /* This is the ul & li background configurations  */

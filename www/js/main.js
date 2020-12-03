@@ -1,4 +1,5 @@
 
+
 var data = (localStorage.getItem('todoList')) ? JSON.parse(localStorage.getItem('todoList')):{
   todo: [],
   completed: []
@@ -19,6 +20,7 @@ document.getElementById('add').addEventListener('click', function() {
   }
 });
 
+//implemented numpad functionality, still under testing !
 document.getElementById('item').addEventListener('keydown', function (e) {
   var value = this.value;
   if ((e.code === 'Enter' || e.code === 'NumpadEnter') && value) {
