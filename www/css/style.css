@@ -9,10 +9,14 @@ body, input, button {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Does the header needs filling?  */
 .noFill {
   fill: none;
 }
 
+/* The configuration for the background of the header.
+   Such as Colours, Positioning, etc.
+*/
 header {
   width: 100%;
   height: 80px;
@@ -23,17 +27,19 @@ header {
   left: 0;
   z-index: 5;
 
-  background: #25b99a;
+  background: #eec145;
   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
+
+/*   This is the header INPUT configuration.     */
 header input {
   width: 100%;
   height: 50px;
   float: left;
-  color: #fff;
+  color: rgb(5, 5, 5);
   font-size: 15px;
   font-weight: 400;
   text-indent: 18px;
@@ -49,21 +55,22 @@ header input {
 }
 
 header input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 header input:-moz-input-placeholder {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(65, 238, 131, 0.75);
 }
 
 header input::-moz-input-placeholder {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(236, 4, 4, 0.75);
 }
 
 header input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(247, 4, 4, 0.75);
 }
 
+/* Header button css costumization*/
 header button {
   width: 50px;
   height: 50px;
@@ -74,7 +81,7 @@ header button {
   z-index:2;
 
   border-radius: 25px;
-  background: #fff;
+  background: rgb(243, 128, 20);
   border: 0px;
   box-shadow: none;
   outline: none;
@@ -84,6 +91,7 @@ header button {
   -moz-appearance: none;
 }
 
+/* This is the configuration for the SIZE and POSITIONING of the logo next to input in the header.  */
 header button svg {
   width: 16px;
   height: 16px;
@@ -95,8 +103,9 @@ header button svg {
   margin: -8px 0 0 -8px;
 }
 
+/* This is the css configuration for the 'Cross/Plus' icon inside the rounded button */
 header button svg .fill {
-  fill: #25b99a;
+  fill: #b92525;
 }
 
 .container {
@@ -114,12 +123,13 @@ ul.todo li {
   width: 100%;
   min-height: 50px;
   float: left;
-  font-size: 14px;
+  font-size: 14px;  
   font-weight: 500;
   color: #444;
   line-height: 22px;
 
-  background: #fff;
+  /* This is the ul & li background configurations  */
+  background: rgb(15, 131, 146);
   border-radius: 5px;
   position: relative;
   box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
@@ -132,6 +142,7 @@ ul.todo li:last-of-type {
   margin: 0;
 }
 
+/*  These are the icons inside the notes add by the user */
 ul.todo li .buttons {
   width: 100px;
   height: 50px;
@@ -177,7 +188,9 @@ ul.todo li .buttons button svg {
 
   margin: -11px 0 0 -11px;
 }
-
+/* Do some fun animations when user press 'Complete'.
+   Some cool animations!
+*/
 ul.todo li .buttons button.complete svg {
   border-radius: 11px;
   border: 1.5px solid #25b99a;
@@ -190,6 +203,7 @@ ul.todo#completed li .buttons button.complete svg {
   border: 0px;
 }
 
+/* When user hovers over the complete icons, change colour to make it clear to user. */
 ul.todo:not(#completed) li .buttons button.complete:hover svg {
   background: rgba(37, 185, 154, 0.75);
 }
@@ -251,5 +265,5 @@ ul.todo#completed:after {
   display: block;
   text-align: center;
   font-size: 12px;
-  color: #aaa;
+  color: rgb(252, 0, 0);
 }

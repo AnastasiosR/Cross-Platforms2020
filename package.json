@@ -1,5 +1,5 @@
 {
-  "name": "io.cordova.hellocordova",
+  "name": "inote",
   "displayName": "HelloCordova",
   "version": "1.0.0",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
@@ -26,5 +26,13 @@
       "browser"
     ]
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dejavu12/Cross-Platforms2020.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dejavu12/Cross-Platforms2020/issues"
+  },
+  "homepage": "https://github.com/Dejavu12/Cross-Platforms2020#readme"
 }
