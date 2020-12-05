@@ -109,6 +109,7 @@ function addItemToDOM(text, completed) {
   // Add click event for removing the item
   remove.addEventListener('click', removeItem);
 
+  //This is the 'Complete Button functionality'
   var complete = document.createElement('button');
   complete.classList.add('complete');
   complete.innerHTML = completeSVG;
